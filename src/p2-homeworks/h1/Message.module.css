@@ -1,0 +1,68 @@
+.content {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+    'avatar message spaser';
+    grid-template-columns: 100px 5fr 10fr;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, black 51%) no-repeat right bottom;
+}
+
+.avatar {
+    align-self: end;
+    justify-self: center;
+}
+
+.avatar img {
+    grid-area: avatar;
+    width: 70px;
+}
+
+.message {
+    grid-area: message;
+    display: grid;
+    grid-template-areas:
+    'name name name'
+    'messageText messageText tmstmp';
+    grid-template-columns: 2fr 2fr 1fr;
+    border: black 1px solid;
+    background-color: black;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 0px;
+}
+
+.name {
+    grid-area: name;
+    padding: 20px 0 0 20px;
+    color: blueviolet;
+}
+
+.messageText {
+    grid-area: messageText;
+    display: inline;
+    padding: 5px 10px 10px 20px;
+    color: white;
+}
+
+.tmstmp {
+    grid-area: tmstmp;
+    display: inline;
+    text-align: right;
+    color: white;
+    padding: 5px 10px 10px 0;
+    align-self: end;
+}
+
+
+
