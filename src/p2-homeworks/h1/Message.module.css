@@ -33,7 +33,7 @@
     grid-template-areas:
     'name name name'
     'messageText messageText tmstmp';
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 60px;
     border: black 1px solid;
     background-color: black;
     border-end-end-radius: 10px;
@@ -62,6 +62,10 @@
     color: white;
     padding: 5px 10px 10px 0;
     align-self: end;
+}
+
+.spaser {
+    grid-area: spaser;
 }
 
 

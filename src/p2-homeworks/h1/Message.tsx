@@ -19,6 +19,7 @@ function Message(props: MessagePropsType) {
                 <div className={style.messageText}>{props.message}</div>
                 <div className={style.tmstmp}>{props.time}</div>
             </div>
+            <div className={style.spaser}></div>
         </div>
     )
 }
