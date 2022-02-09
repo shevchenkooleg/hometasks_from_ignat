@@ -3,7 +3,7 @@
     display: grid;
     grid-template-areas:
     'avatar message spaser';
-    grid-template-columns: 100px 5fr 10fr;
+    grid-template-columns: 100px 2fr 10fr;
 }
 
 .content::after {

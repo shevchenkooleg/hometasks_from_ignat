@@ -1,3 +1,7 @@
-.someClass {
+.content {
+    display:inline;
+}
 
+button {
+    background-color: chartreuse;
 }
