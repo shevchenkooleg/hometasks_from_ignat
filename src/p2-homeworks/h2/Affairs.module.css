@@ -1,7 +1,56 @@
 .content {
-    display:inline;
+    display: grid;
+    grid-template-areas:
+    'affairs'
+    'buttons';
+    margin: 10px 0 10px 20px;
 }
 
-button {
-    background-color: chartreuse;
+.affairs {
+    grid-area: affairs;
+}
+
+.title {
+    color: blueviolet;
+    padding: 0 0 0 30px;
+}
+
+.buttons button {
+    background-color: #c7c7c7;
+    border-radius: 10px;
+    width: 50px;
+    margin: 10px 5px 0 0;
+}
+
+.buttons button:hover {
+    border-radius: 10px;
+    width: 50px;
+    margin: 10px 5px 0 0;
+    background-color: #e86d17;
+    transition: 0.7s;
+    color: white;
+}
+
+.buttons .Active {
+    background-color: #e86d17;
+    color: white;
+}
+
+.buttons .ActiveM {
+    background-color: #e86d17;
+    color: white;
+    width: 60px;
+}
+
+.buttons .BtnM {
+    width: 60px;
+}
+
+.buttons .BtnM:hover {
+    border-radius: 10px;
+    margin: 10px 5px 0 0;
+    background-color: #e86d17;
+    transition: 0.7s;
+    color: white;
+    width: 60px;
 }
