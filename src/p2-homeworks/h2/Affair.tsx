@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {AffairType} from "./HW2";
 import style from './Affair.module.css'
 
@@ -9,6 +9,9 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
+
+    let [crossOut, setCrossOut] = useState(false)
+
     const deleteCallback = () => {
         props.deleteAffairCallback(props.affair._id)
     }// need to fix
@@ -24,12 +27,17 @@ function Affair(props: AffairPropsType) {
         }
     }
 
+
     return (
         <div className={style.content}>
-            <div className={titleColorized()}>{props.affair.name}</div>
-            {/*<div className={style.priority}>{props.affair.priority}</div>*/}
+            <div className={`title ${titleColorized()} ${crossOut ? style.crossOut : ''}`}>{props.affair.name}</div>
             <div>
-                <button className={style.delBtn} onClick={deleteCallback}>X</button>
+                <button
+                    className={style.delBtn}
+                    onClick={deleteCallback}
+                    onMouseOver={()=>{setCrossOut(true)}}
+                    onMouseLeave={()=>{setCrossOut(false)}}
+                >X</button>
             </div>
 
         </div>

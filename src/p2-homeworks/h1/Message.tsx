@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Message.module.css'
 
+
 type MessagePropsType = {
     avatar: string
     name: string
@@ -11,6 +12,7 @@ type MessagePropsType = {
 function Message(props: MessagePropsType) {
     return (
         <div className={style.content}>
+            <div className={style.spacer}></div>
             <div className={style.avatar}>
                 <img src={props.avatar} alt="avatar"/>
             </div>
@@ -19,7 +21,7 @@ function Message(props: MessagePropsType) {
                 <div className={style.messageText}>{props.message}</div>
                 <div className={style.tmstmp}>{props.time}</div>
             </div>
-            <div className={style.spaser}></div>
+            <div className={style.spacer}></div>
         </div>
     )
 }

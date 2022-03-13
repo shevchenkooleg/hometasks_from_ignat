@@ -1,10 +1,15 @@
 .content {
+    grid-area: affairs;
     display:grid;
     grid-template-areas:
-    'title priority delBtn';
-    grid-template-columns: 100px 50px 50px;
-    grid-gap: 5px;
+    'title delBtn';
+    grid-template-columns: 100px 50px;
+    grid-gap: 50px;
     margin: 3px 0 3px 0;
+}
+
+.title {
+    grid-area: title;
 }
 
 
@@ -19,13 +24,8 @@
 }
 
 .middlePriorityTitle {
-    color: orange;
+    color: #ff8800;
     grid-area: title;
-}
-
-
-.priority {
-    grid-area: priority;
 }
 
 
@@ -40,11 +40,17 @@
 
 .delBtn:hover {
     grid-area: delBtn;
-    background-color: #e86d17;
+    background-color: rgba(131, 128, 128, 0.9);
     border-radius: 10px;
     width: 30px;
     margin-left: 10px;
     transition: 0.7s;
     color: white;
 
+}
+
+.crossOut {
+    text-decoration: line-through;
+    transition: 1s;
+    color: rgba(128, 128, 128, 0.53);
 }

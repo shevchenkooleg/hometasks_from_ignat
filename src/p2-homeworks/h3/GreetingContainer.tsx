@@ -44,7 +44,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         }
     }
 
-    const buttonDisabler = !!error
+    const buttonDisabler = !!error || !name
 
     const totalUsers = users.length // need to fix
 

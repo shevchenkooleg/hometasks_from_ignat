@@ -16,13 +16,12 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers, onPressKey,buttonDisabler} // деструктуризация пропсов
 ) => {
     const inputClass = error ? style.error : style.data // need to fix with (?:)
-    console.log()
 
     return (
         <div className={style.content}>
             <input value={name} onChange={setNameCallback} className={inputClass} onKeyPress={onPressKey}/>
 
-            <button disabled={buttonDisabler} onClick={addUser}>add</button>
+            <button className={!buttonDisabler ? style.enable : ''} disabled={buttonDisabler} onClick={addUser}>add</button>
             <span>{totalUsers}</span>
             <div>{error}</div>
         </div>

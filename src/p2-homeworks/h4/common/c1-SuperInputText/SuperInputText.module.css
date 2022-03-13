@@ -1,6 +1,8 @@
 .superInput {
-    border: #c7c7c7;
-    background: #c7c7c7;
+    border: 1px solid rgba(82, 82, 82, 0.8);
+    border-radius: 2px;
+    background: white;
+    margin: 2px 0;
 }
 
 .errorInput {
@@ -11,5 +13,6 @@
 .error {
     color: red;
 }
-.qqq {background-color: yellow;
+.qqq {
+    background-color: yellow;
 }

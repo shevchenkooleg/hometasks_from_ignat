@@ -8,10 +8,13 @@
 
 .affairs {
     grid-area: affairs;
+    margin: 0 auto;
+    /*width: 230px;*/
 }
 
+
 .title {
-    color: blueviolet;
+    /*color: blueviolet;*/
     padding: 0 0 0 30px;
 }
 
@@ -26,18 +29,18 @@
     border-radius: 10px;
     width: 50px;
     margin: 10px 5px 0 0;
-    background-color: #e86d17;
+    background-color: rgba(131, 128, 128, 0.9);
     transition: 0.7s;
     color: white;
 }
 
 .buttons .Active {
-    background-color: #e86d17;
+    background-color: rgba(131, 128, 128, 0.9);
     color: white;
 }
 
 .buttons .ActiveM {
-    background-color: #e86d17;
+    background-color: rgba(131, 128, 128, 0.9);
     color: white;
     width: 60px;
 }
@@ -49,8 +52,14 @@
 .buttons .BtnM:hover {
     border-radius: 10px;
     margin: 10px 5px 0 0;
-    background-color: #e86d17;
+    background-color: rgba(131, 128, 128, 0.9);
     transition: 0.7s;
+    color: white;
+    width: 60px;
+}
+
+.buttons .ActiveM:hover {
+    background-color: rgba(131, 128, 128, 0.9);
     color: white;
     width: 60px;
 }

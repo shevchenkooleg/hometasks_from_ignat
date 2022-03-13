@@ -1,23 +1,27 @@
 .content {
     margin: 10px 0 10px 20px;
+    height: 40px;
 }
 
 .content button {
     background-color: #c7c7c7;
     border-radius: 10px;
-    width: 70px;
+    width: 50px;
     margin: 0 10px 0 10px;
 
 }
 
-.content button:hover {
-    background-color: #e86d17;
+.content .enable:hover {
+    background-color: rgba(131, 128, 128, 0.9);
     border-radius: 10px;
-    width: 70px;
+    width: 50px;
     margin-left: 10px;
     transition: 0.7s;
     color: white;
 
+}
+
+.data {
 }
 
 .error {

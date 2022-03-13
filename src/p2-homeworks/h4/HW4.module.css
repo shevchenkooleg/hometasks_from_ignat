@@ -1,5 +1,5 @@
 .blue {
-    border-bottom: 5px solid blue;
+    border-bottom: 3px solid blue;
 }
 
 .column {
@@ -10,4 +10,12 @@
 
 .testSpanError {
     color: blue;
+}
+
+.content {
+
+}
+
+.title {
+    padding: 0 0 10px 0;
 }
