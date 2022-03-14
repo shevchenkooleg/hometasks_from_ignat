@@ -5,8 +5,9 @@
     background: url('https://oir.mobi/uploads/posts/2021-03/1616540373_19-p-krasivii-serii-fon-20.jpg') center center/cover repeat;
     color: #115656;
     min-height: 820px;
+
+    position: relative;
+    overflow-x: hidden;
 }
 
-.title {
-    font-size: 26px;
-}
+

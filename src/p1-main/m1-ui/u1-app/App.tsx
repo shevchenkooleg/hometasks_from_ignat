@@ -10,7 +10,6 @@ import HW5 from '../../../p2-homeworks/h5-rrd-v6/HW5';
 function App() {
     return (
         <div className={s.App}>
-            <div className={s.title}>REACT HOMEWORKS</div>
             {/*<HW1/>*/}
             {/*<HW2/>*/}
             {/*<HW3/>*/}

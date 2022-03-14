@@ -26,37 +26,32 @@ img {
     width: 90%;
 }
 
-.empty {
-    height: 20px;
-    background-color: #eeeee8;
-}
-
-a.s404 {
+.link a{
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
     color: rgba(44, 124, 236, 0.79);
 }
 
-a.s404:link{
+.link a:link{
     color: rgba(44, 124, 236, 0.79);
 }
 
-a.s404:visited {
+.link a:visited {
     color: rgba(44, 124, 236, 0.79);
 }
 
-a.s404:focus {
+.link a:focus {
     border-bottom: 1px solid;
 }
 
-a.s404:hover {
+.link a:hover {
     border-bottom: 1px solid;
     color: rgba(17, 49, 171, 0.75);
     transition: 0.2s;
 }
 
-a.s404:active {
+.link a:active {
     background: #eeeee8;
     color: rgba(175, 61, 239, 0.79);
 }

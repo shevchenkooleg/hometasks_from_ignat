@@ -4,6 +4,7 @@ import Error404 from './pages/Error404';
 import Junior from './pages/Junior';
 import JuniorPlus from './pages/JuniorPlus';
 import PreJunior from './pages/PreJunior';
+import s from './Pages.module.css'
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -12,9 +13,19 @@ export const PATH = {
     ERROR: '/qqq'
 }
 
-function Pages() {
+type PropsType = {
+    active: boolean
+}
+
+function Pages(props: PropsType) {
+
+    const resultClassForContent = () => {
+        return (!props.active ? s.content : s.content_active)
+    }
+
     return (
-        <div>
+        <div className={resultClassForContent()}>
+            <div className={s.title}>REACT HOMEWORKS</div>
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
 
