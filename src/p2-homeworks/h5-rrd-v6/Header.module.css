@@ -2,12 +2,13 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 25%;
+    z-index: 99;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(100, 121, 114, 0.9);
     transition: 0.5s;
     transform: translateX(-100%);
 }
@@ -16,7 +17,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 25%;
+    z-index: 99;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
