@@ -2,7 +2,10 @@
     display: flex;
     align-items: flex-end;
     margin: 10px;
+<<<<<<< HEAD
     justify-content: center;
+=======
+>>>>>>> refs/remotes/origin/master
 }
 
 .avatar {
