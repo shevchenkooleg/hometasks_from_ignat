@@ -5,13 +5,13 @@ import Pages from './Pages'
 
 function HW5() {
 
-    let [active, setActive] = useState(false)
+    let [sideBarActive, setSideBarActive] = useState(false)
 
     return (
         <HashRouter>
             <div>
-                <Header active={active} setActive={setActive}/>
-                <Pages active={active}/>
+                <Header active={sideBarActive} setActive={setSideBarActive}/>
+                <Pages active={sideBarActive}/>
             </div>
         </HashRouter>
     )

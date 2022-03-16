@@ -1,5 +1,7 @@
 // вот вам функция для сохранения объектов в память браузера
 // (данные в этом хранилище сохраняться даже при перезагрузке компа):
+
+
 export function saveState<T>(key: string, state: T) {
     const stateAsString = JSON.stringify(state)
     localStorage.setItem(key, stateAsString)
@@ -10,6 +12,7 @@ export function restoreState<T>(key: string, defaultState: T) {
     let state = defaultState
     const stateAsString = localStorage.getItem(key)
     if (stateAsString !== null) state = JSON.parse(stateAsString) as T
+
     return state
 }
 
@@ -25,3 +28,6 @@ saveState<StateType>('test', {x: 'A', y: 1})
 
 // получем в переменную state объект из ячейки 'test' или дэфолтный объект если ячейка пуста
 const state: StateType = restoreState<StateType>('test', {x: '', y: 0})
+console.log(state)
+
+

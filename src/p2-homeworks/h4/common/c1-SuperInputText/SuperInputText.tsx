@@ -34,7 +34,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         onKeyPress && onKeyPress(e);
 
         onEnter // если есть пропс onEnter
-        && e.key === 'q' // и если нажата кнопка Enter
+        && e.key === 'Enter' // и если нажата кнопка Enter
         && onEnter() // то вызвать его
     }
 
