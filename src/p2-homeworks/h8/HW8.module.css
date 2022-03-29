@@ -1,0 +1,29 @@
+.content {
+    display: grid;
+    grid-template-areas:
+    'name age';
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    margin: auto;
+}
+
+.name {
+    grid-area: name;
+    justify-self: left;
+}
+
+.age {
+    grid-area: age;
+    justify-self: right;
+}
+
+.button_bar {
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas:
+    'b b b';
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    margin: auto;
+
+}
