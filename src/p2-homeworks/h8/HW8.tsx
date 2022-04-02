@@ -35,7 +35,7 @@ function HW8() {
     return (
         <div>
             <hr/>
-            homeworks 8
+            Homework 8
             {/*should work (должно работать)*/}
             {finalPeople}
             <div className={s.button_bar}>
