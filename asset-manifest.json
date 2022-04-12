@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/hometasks_from_ignat/static/css/main.acdd94fd.css",
-    "main.js": "/hometasks_from_ignat/static/js/main.817ab342.js",
+    "main.js": "/hometasks_from_ignat/static/js/main.facaf380.js",
     "static/media/imgbin_rayman-raving-rabbids.png": "/hometasks_from_ignat/static/media/imgbin_rayman-raving-rabbids.ad70d9e4350af199fb71.png",
+    "static/media/preloader.svg": "/hometasks_from_ignat/static/media/preloader.51b1deea1ba496e059ca42d74ad61acd.svg",
     "index.html": "/hometasks_from_ignat/index.html",
     "main.acdd94fd.css.map": "/hometasks_from_ignat/static/css/main.acdd94fd.css.map",
-    "main.817ab342.js.map": "/hometasks_from_ignat/static/js/main.817ab342.js.map"
+    "main.facaf380.js.map": "/hometasks_from_ignat/static/js/main.facaf380.js.map"
   },
   "entrypoints": [
     "static/css/main.acdd94fd.css",
-    "static/js/main.817ab342.js"
+    "static/js/main.facaf380.js"
   ]
 }
