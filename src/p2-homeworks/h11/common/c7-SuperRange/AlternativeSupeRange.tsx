@@ -1,5 +1,6 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import s from './SuperRange.module.css'
+import {Box, Slider} from "@mui/material";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -8,37 +9,39 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
 type SuperRangePropsType = DefaultInputPropsType & { // и + ещё пропсы которых нет в стандартном инпуте
     onChangeRange?: (value: number) => void
+    value: number
 };
 
-const SuperRange: React.FC<SuperRangePropsType> = (
+const AlternativeSuperRange: React.FC<SuperRangePropsType> = (
     {
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeRange,
-        className, value,
+        className,
+        value,
 
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
-    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>, newValue:number) => {
         onChange && onChange(e) // сохраняем старую функциональность
 
-        onChangeRange && onChangeRange(+e.currentTarget.value)
+        onChangeRange && onChangeRange(+e.target.value)
     }
 
     const finalRangeClassName = `${s.range} ${className ? className : ''}`
 
     return (
-        <>
-            <input
+        <Box sx={{ width: 150 , margin: '0 auto'}}>
+            <Slider
+                getAriaLabel={() => 'Minimum distance'}
                 value={value}
-                type={'range'}
+                //@ts-ignore
                 onChange={onChangeCallback}
-                className={finalRangeClassName}
-
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+                valueLabelDisplay="auto"
+                disableSwap
             />
-        </>
+        </Box>
     )
 }
 
-export default SuperRange
+export default AlternativeSuperRange

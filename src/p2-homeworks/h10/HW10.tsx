@@ -2,12 +2,11 @@ import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {Dispatch} from "redux";
-import {HW10ReducerType, loadingAC, SelectorAllState} from './bll/loadingReducer';
-import {AppStateType} from "./bll/store";
+import {HW10ReducerType, loadingAC, SelectorHW10State} from './bll/loadingReducer';
 import Preloader from "./Preloader/Preloader";
 
 function HW10() {
-    const {isLoading} = useSelector(SelectorAllState)
+    const {isLoading} = useSelector(SelectorHW10State)
     const dispatch = useDispatch<Dispatch<HW10ReducerType>>()
 
     const setLoading = () => {
