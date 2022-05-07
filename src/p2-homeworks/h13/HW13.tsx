@@ -2,7 +2,6 @@ import React from 'react';
 import {makeTestingRequest, toggleSuccess} from "./bll/requestReduser";
 import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../h10/bll/store";
-import axios from "axios";
 
 
 
@@ -27,11 +26,13 @@ type RequestPropsType = {
 
 const Request = (props: RequestPropsType) => {
 
+    const errorText = useSelector((state:AppStateType) => state.HW13.errorText)
+    const info = useSelector((state:AppStateType) => state.HW13.info)
+
     const dispatch = useDispatch()
 
     const onCLickHandler = () => {
-        console.log('click')
-        makeTestingRequest(false)
+        dispatch(makeTestingRequest(props.success))
     }
 
     const onChangeHandler = () => {
@@ -41,11 +42,17 @@ const Request = (props: RequestPropsType) => {
     return (
         <>
             <div>
+                <input type="checkbox" checked={props.success} onChange={(e)=>{
+                    dispatch(toggleSuccess(e.target.checked))}}/>
+            </div>
+            <div>
                 <button onClick={onCLickHandler}>Request</button>
             </div>
             <div>
-                <input type="checkbox" checked={props.success} onChange={(e)=>{
-                    dispatch(toggleSuccess(e.target.checked))}}/>
+                <span>{errorText}</span>
+            </div>
+            <div>
+                <span>{info}</span>
             </div>
         </>
     )

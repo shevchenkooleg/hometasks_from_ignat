@@ -1,8 +1,12 @@
 import axios from "axios";
 
+const instance = axios.create({
+    baseURL: 'https://neko-cafe-back.herokuapp.com/'
+});
+
 export const RequestAPI = {
     testingRequest(success: boolean) {
-        return axios.post('https://neko-cafe-back.herokuapp.com/auth/test', {success: true})
+        return instance.post('auth/test', {success: success})
             .then(response => {
                 return response
             })
