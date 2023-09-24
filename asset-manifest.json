@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/hometasks_from_ignat/static/css/main.76a2fd08.css",
-    "main.js": "/hometasks_from_ignat/static/js/main.4fa92e44.js",
-    "static/media/imgbin_rayman-raving-rabbids.png": "/hometasks_from_ignat/static/media/imgbin_rayman-raving-rabbids.ad70d9e4350af199fb71.png",
-    "static/media/preloader.svg": "/hometasks_from_ignat/static/media/preloader.51b1deea1ba496e059ca42d74ad61acd.svg",
+    "main.css": "/hometasks_from_ignat/static/css/main.cb064aa3.css",
+    "main.js": "/hometasks_from_ignat/static/js/main.5fcd1bf5.js",
     "index.html": "/hometasks_from_ignat/index.html",
-    "main.76a2fd08.css.map": "/hometasks_from_ignat/static/css/main.76a2fd08.css.map",
-    "main.4fa92e44.js.map": "/hometasks_from_ignat/static/js/main.4fa92e44.js.map"
+    "main.cb064aa3.css.map": "/hometasks_from_ignat/static/css/main.cb064aa3.css.map",
+    "main.5fcd1bf5.js.map": "/hometasks_from_ignat/static/js/main.5fcd1bf5.js.map"
   },
   "entrypoints": [
-    "static/css/main.76a2fd08.css",
-    "static/js/main.4fa92e44.js"
+    "static/css/main.cb064aa3.css",
+    "static/js/main.5fcd1bf5.js"
   ]
 }
